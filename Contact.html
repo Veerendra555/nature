@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ContactUs</title>
+	<style type="text/css">
+		body
+		 {
+		 	padding: 25px;
+		 }
+		p{
+			font-family: serif;
+			text-decoration-line: dotted;
+			color: brown;
+		}
+		span{
+			color :blue;
+		}
+		a{
+		  text-decoration: none;
+		  padding: 10px;
+		  padding-top: 1000px;
+		  color: rgb(100,100,39);
+		}
+    #b1{
+   	  font-size: 27px;
+   	 
+   }	
+    #name{
+    	color: blue;
+    	font-family: all;
+
+    }	
+    .myimg img
+    {
+    	width: 200px;
+    	height: 200px;
+    	padding: 0;
+
+    }
+	</style>
+	<script type="text/javascript">
+		function feedback(ele) {	
+		 if(ele.value=='submit')
+		 {
+		 	alert("Thanks You");
+		 }
+		 else
+		 {
+		 	alert("Enter Comment");
+		 }
+		}	 
+	</script>
+</head>
+<body>
+    <a href="imagesEx.html" id="b1">Home</a>
+     <div>
+     <p>Hi This Is <span><a id ="name" href="https://pickbestsolutions.blogspot.com">Sai veerendra Reddy<a></span></p>
+   <p>Do You Have Any Quarys Write In The Below Comment Box</p>	
+     </div>
+     <div class="myimg">
+      <img src="images/mypic.jpg" alt="photo">
+     </div>
+     <div id="cmt">
+     	<span style="color: red">Comment :</span><br>
+     	<textarea placeholder="Enter text here" style="padding-top: 10px;" rows="10px" id="text" required></textarea>
+     </div>
+      <form>
+     <button type="submit" value="submit" onclick="feedback(this)">submit</button>
+     <button type="reset" onclick="feedback(this)">reset</button>
+     </form>
+</body>
+</html>

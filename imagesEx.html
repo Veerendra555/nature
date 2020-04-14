@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Images</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		#heading{
+			margin: 0px;
+		    position: 0px;
+		     margin-top: 0px;
+				}
+				.nav-bar
+				{
+					background-color: rgb(0,100,0);
+					box-sizing: border-box;
+
+				}
+		.nav-bar ul li
+		{
+			width:90px;
+			margin: 20px;
+			padding: 40px;
+			display: inline;
+		}		
+		.nav-bar ul li a
+		{
+			text-decoration: none;
+			color: lightblue;
+			 font-family: bold;
+			 font-size: 20px;
+		}	
+
+		.nav-bar ul ol li
+		    {
+		    	display: none;
+
+
+		    }
+		    .nav-bar ul  li  :hover
+		    {
+		    	background-color: black;
+                 color: white; 
+		    }
+		    .nav-bar ul li i
+		    {
+		    	
+		    	padding-right: 5px;
+		    }
+      .nav-sub1 
+      {
+         display: none;
+      }
+   
+       .nav-bar ul li:hover .nav-sub1 
+       {
+       	display: block;
+       	position: absolute;
+       	background:rgb(0,100,0);
+       	margin-top: 15px;
+       	margin-left: -15px;
+       }
+       .nav-bar ul li:hover .nav-sub1 ul 
+       {
+       	display:block;
+       	margin: 15px;
+       }
+	</style>
+	<script type="text/javascript">
+		function imageOver() {
+			var img=document.getElementById('pic')
+			img.src="images/nature1.jpg";
+		}
+		function imageLeave()
+		{
+		   var img=document.getElementById('pic')
+			img.src="images/nature2.jpg";			
+		}
+
+	</script>
+</head>
+<body>
+	<div class="nav-bar">
+	  <ul>
+          <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+          <li><i class="fa fa-pagelines"><a href="#"></i>Nature</a>
+          <div class="nav-sub1">
+          	<ul>
+          		<li><a href="Himalays.html">Himalays</a></li>
+          		<li><a href="Village.html">Village pics</a></li>
+          		<li><a href="Oceans.html">Oceans</a></li>
+          	</ul>
+          </div>
+          </li>
+          <li><i class="fa fa-tree"><a href="#"></i>Plants</a>
+          <div class="nav-sub1">
+          	<ul>
+          		<li><a href="Plants.html">Auravadic plants</a></li>
+          		<li><a href="Plants1.html">Flowering</a></li>
+          		<li><a href="Plants2.html">Non Flowering</a></li>
+          	</ul>
+          </div>
+          </li>
+          <li><i class="fa fa-twitter"><a href="#"></i>Animals</a>
+          <div class="nav-sub1">
+          	<ul>
+          		<li><a href="Pet.html">Pet Animals</a></li>
+          		<li><a href="Wild.html">Wild Animals</a></li>
+          		<li><a href="Nwild.html">Non Wild Animals</a></li>
+          	</ul>
+          </div>
+          </li>
+          <li><i class="fa fa-mobile"><a href="Contact.html"></i>ContactUs</a></li>
+          <li><a href="#">About</a></li>
+	  </ul>		
+	</div>
+	<h1><marquee id="headind" style="color: lightpink">Images View</marquee></h1>
+	 <div><fieldset>Nature
+     <img src="images/nature.jpg"  id="pic" alt="naturepic" onmouseover="imageOver()" onmouseleave="imageLeave()" >
+	 </fieldset>
+	 </div>
+
+</body>
+</html>
